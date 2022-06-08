@@ -14,12 +14,14 @@ async function getResults(){
     
     console.log(pageNum)
     console.log(movePage)
+
     let url = `http://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${searchTerm.value}&limit=9&offset=${movePage}`
     const response = await fetch(url)
     const responseData = await response.json()
     const data = responseData.data
 
     console.log(response)
+    console.log(responseData)
     console.log(data)
 
     displayResults(data)
