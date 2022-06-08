@@ -28,6 +28,7 @@ async function getResults(){
     const data = responseData.data
 
     console.log(response)
+    console.log(responseData)
     console.log(data)
 
 
